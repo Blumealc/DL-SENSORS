@@ -2,7 +2,7 @@
 	"name" : "SOMI-1 DL Editor4L",
 	"version" : 1,
 	"creationdate" : 3756542150,
-	"modificationdate" : 3756542964,
+	"modificationdate" : 3756550072,
 	"viewrect" : [ 142.0, 227.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
@@ -21,22 +21,12 @@
 		"code" : 		{
 			"somi-1_sysex_interface_test.js" : 			{
 				"kind" : "javascript",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Max for Live Devices/SOMI-1 Editor for Live Project/code",
-					"projectrelativepath" : "../../../Max 8/Max for Live Devices/SOMI-1 Editor for Live Project/code"
-				}
-
+				"local" : 1
 			}
 ,
 			"somi-1_sysex_interface.js" : 			{
 				"kind" : "javascript",
-				"local" : 1,
-				"singleton" : 				{
-					"bootpath" : "~/Documents/Max 8/Max for Live Devices/SOMI-1 Editor for Live Project/code",
-					"projectrelativepath" : "../../../Max 8/Max for Live Devices/SOMI-1 Editor for Live Project/code"
-				}
-
+				"local" : 1
 			}
 
 		}
@@ -57,5 +47,5 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 0
+	"viewmode" : 1
 }

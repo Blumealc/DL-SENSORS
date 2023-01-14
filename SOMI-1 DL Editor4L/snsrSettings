@@ -1,0 +1,53 @@
+{
+	"ccparam" : [	{
+			"scale" : 1,
+			"rise" : 0,
+			"fall" : 0,
+			"shape" : 0,
+			"midich" : 0,
+			"controller" : 16,
+			"highres" : false,
+			"solo" : false
+		}
+,		{
+			"scale" : 1,
+			"rise" : 0,
+			"fall" : 0,
+			"shape" : 0,
+			"midich" : 0,
+			"controller" : 16,
+			"highres" : false,
+			"solo" : false
+		}
+,		{
+			"scale" : 1,
+			"rise" : 0,
+			"fall" : 0,
+			"shape" : 0,
+			"midich" : 0,
+			"controller" : 16,
+			"highres" : false,
+			"solo" : false
+		}
+,		{
+			"scale" : 1,
+			"rise" : 0,
+			"fall" : 0,
+			"shape" : 0,
+			"midich" : 0,
+			"controller" : 16,
+			"highres" : false,
+			"solo" : false
+		}
+,		{
+			"scale" : 1,
+			"rise" : 0,
+			"fall" : 0,
+			"shape" : 0,
+			"midich" : 0,
+			"controller" : 16,
+			"highres" : false,
+			"solo" : false
+		}
+	]
+}

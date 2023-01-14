@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 106.0, 1732.0, 957.0 ],
+		"rect" : [ 634.0, 273.0, 640.0, 480.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,121 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-98",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 675.177319049835205, 336.839476048946381, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-82",
+					"maxclass" : "dict.view",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 675.177319049835205, 433.380928337574005, 199.29078221321106, 196.453902721405029 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"ccparam" : [ 							{
+								"scale" : 1,
+								"rise" : 0,
+								"fall" : 0,
+								"shape" : 0,
+								"midich" : 0,
+								"controller" : 16,
+								"highres" : 0,
+								"solo" : 0
+							}
+, 							{
+								"scale" : 1,
+								"rise" : 0,
+								"fall" : 0,
+								"shape" : 0,
+								"midich" : 0,
+								"controller" : 16,
+								"highres" : 0,
+								"solo" : 0
+							}
+, 							{
+								"scale" : 1,
+								"rise" : 0,
+								"fall" : 0,
+								"shape" : 0,
+								"midich" : 0,
+								"controller" : 16,
+								"highres" : 0,
+								"solo" : 0
+							}
+, 							{
+								"scale" : 1,
+								"rise" : 0,
+								"fall" : 0,
+								"shape" : 0,
+								"midich" : 0,
+								"controller" : 16,
+								"highres" : 0,
+								"solo" : 0
+							}
+, 							{
+								"scale" : 1,
+								"rise" : 0,
+								"fall" : 0,
+								"shape" : 0,
+								"midich" : 0,
+								"controller" : 16,
+								"highres" : 0,
+								"solo" : 0
+							}
+, 							{
+								"scale" : 1,
+								"rise" : 0,
+								"fall" : 0,
+								"shape" : 0,
+								"midich" : 0,
+								"controller" : 16,
+								"highres" : 0,
+								"solo" : 0
+							}
+ ]
+					}
+,
+					"id" : "obj-81",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 675.177319049835205, 377.867843925952911, 159.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict snsrSettings @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-78",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 605.45296984910965, 334.839476048946381, 42.0, 22.0 ],
+					"text" : "print a"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-84",
 					"linecount" : 6,
@@ -692,8 +807,8 @@
 					"id" : "obj-1",
 					"maxclass" : "newobj",
 					"numinlets" : 31,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 169.95296984910965, 287.839476048946381, 890.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"filename" : "somi-1_sysex_interface.js",
@@ -2088,6 +2203,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-78", 0 ],
+					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 17 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -2401,6 +2523,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 26 ],
 					"source" : [ "obj-83", 0 ]
 				}
@@ -2445,6 +2574,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-98", 0 ]
 				}
 
 			}
