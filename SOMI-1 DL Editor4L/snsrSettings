@@ -1,53 +1,453 @@
 {
-	"ccparam" : [	{
-			"scale" : 1,
-			"rise" : 0,
-			"fall" : 0,
-			"shape" : 0,
-			"midich" : 0,
-			"controller" : 16,
-			"highres" : false,
-			"solo" : false
+	"sensor" : [ 		{
+			"ccparam" : [ 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+ ]
 		}
-,		{
-			"scale" : 1,
-			"rise" : 0,
-			"fall" : 0,
-			"shape" : 0,
-			"midich" : 0,
-			"controller" : 16,
-			"highres" : false,
-			"solo" : false
+, 		{
+			"ccparam" : [ 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+ ]
 		}
-,		{
-			"scale" : 1,
-			"rise" : 0,
-			"fall" : 0,
-			"shape" : 0,
-			"midich" : 0,
-			"controller" : 16,
-			"highres" : false,
-			"solo" : false
+, 		{
+			"ccparam" : [ 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+ ]
 		}
-,		{
-			"scale" : 1,
-			"rise" : 0,
-			"fall" : 0,
-			"shape" : 0,
-			"midich" : 0,
-			"controller" : 16,
-			"highres" : false,
-			"solo" : false
+, 		{
+			"ccparam" : [ 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+ ]
 		}
-,		{
-			"scale" : 1,
-			"rise" : 0,
-			"fall" : 0,
-			"shape" : 0,
-			"midich" : 0,
-			"controller" : 16,
-			"highres" : false,
-			"solo" : false
+, 		{
+			"ccparam" : [ 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+ ]
 		}
-	]
+, 		{
+			"ccparam" : [ 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+, 				{
+					"enable" : 0,
+					"inverse" : 0,
+					"scale" : 1,
+					"rise" : 0,
+					"fall" : 0,
+					"shape" : 0,
+					"midich" : 0,
+					"controller" : 16,
+					"highres" : 0,
+					"solo" : 0
+				}
+ ]
+		}
+ ]
 }

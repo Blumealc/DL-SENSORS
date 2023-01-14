@@ -95,26 +95,8 @@ gPbMidiChannel = 0;
 gDiscoveryTask = 0;
 
 
-// Creating array with nested dictionaries for UI variables refreshing and recalling
-var snsr = []
-var ccparameters = []
-for (prm = 0; prm < 7; prm++) {
-	ccparameters[prm] =  {
-		scale: 1.0,
-		rise: 0.0,
-		fall: 0.0,
-		shape: 0.0,
-		midich: 0,
-		controller: 16,
-		highres: false,
-		solo: false
-	}
-}
-for (id = 0; id < 6; id++) {
-	snsr[id] = {
-		ccparam: ccparameters
-	}
-}
+// Pointing to embedded dictionary for UI variables refreshing and recalling
+var snsr = new Dict("snsrSettings");
 
 // Is used as workaround to address parameterlistener problem when routing back received midi
 function msg_int(v)
@@ -655,32 +637,51 @@ function ccParamCb(data){
     }
 
 	gCcParam = data.value;
-	this.patcher.getnamed("somi1.cc_scale").message("set", snsr[gSensorId].ccparam[gCcParam].scale);
-	outlet(2, snsr);
-	post();
+	//this.patcher.getnamed("somi1.cc_scale").message("set", snsr[gSensorId].ccparam[gCcParam].scale);
+	update_UI();
 }
 function ccEnableCb(data) {
 	gCcEnable = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::enable", data.value);
 }
 function ccInverseCb(data) {
 	gCcInverse = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::inverse", data.value);
 }
 function ccScaleCb(data) { 
 	gCcScale = data.value; 
-	snsr[gSensorId].ccparam[gCcParam].scale = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::scale", data.value);
 }
-function ccSlewRiseCb(data){ gCcSlewRise = data.value; }
-function ccSlewFallCb(data){ gCcSlewFall = data.value; }
-function ccSlewShapeCb(data){ gCcSlewShape = data.value; }
-function ccMidiChannelCb(data){ gCcMidiChannel = data.value - 1; }
-function ccControllerCb(data){ gCcController = data.value; }
-function ccHighResCb(data){ gCcHighRes = data.value; }
+function ccSlewRiseCb(data) {
+	gCcSlewRise = data.value; 
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::rise", data.value);
+}
+function ccSlewFallCb(data) {
+	gCcSlewFall = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::fall", data.value);
+}
+function ccSlewShapeCb(data) {
+	gCcSlewShape = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::shape", data.value);
+}
+function ccMidiChannelCb(data) {
+	gCcMidiChannel = data.value - 1;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::midich", data.value);
+}
+function ccControllerCb(data) {
+	gCcController = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::controller", data.value);
+}
+function ccHighResCb(data) {
+	gCcHighRes = data.value;
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::highres", data.value);
+}
 function ccSoloCb(data){ 
-
     gCcSolo = data.value;
-
+	snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::solo", data.value);
     outlet(0, createSysExCmdCcSolo(gCcMidiChannel, gCcController, gCcSolo));
 }
+
 function noteParamGateCb(data){ gNoteParamGate = data.value; }
 function noteEnableCb(data){ gNoteEnable = data.value; }
 function noteGateInverseCb(data){ gNoteGateInverse = data.value; }
@@ -1095,4 +1096,75 @@ function floatToByte(floatVal){
     byteArray[4] = bytes[0] >>  0 & 0x7F;
     
     return byteArray;
+}
+
+// Updates all parameters shown in the UI by the live objects
+function update_UI() {
+
+	// Control Change Section
+	this.patcher.getnamed("somi1.cc_enable").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::enable"));
+	this.patcher.getnamed("somi1.cc_inverse").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::inverse"));
+	this.patcher.getnamed("somi1.cc_scale").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::scale"));
+	this.patcher.getnamed("somi1.cc_slew_rise").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::rise"));
+	this.patcher.getnamed("somi1.cc_slew_fall").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::fall"));
+	this.patcher.getnamed("somi1.cc_slew_shape").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::shape"));
+	this.patcher.getnamed("somi1.cc_midi_channel").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::midich"));
+	this.patcher.getnamed("somi1.cc_controller").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::controller"));
+	this.patcher.getnamed("somi1.cc_high_res").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::highres"));
+	this.patcher.getnamed("somi1.cc_solo").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::solo"));
+}
+
+// Resets dictionary to default
+function reset_dictionary() {
+	snsr.clear();
+	var sensors = new Array(6);
+	for (i = 0; i < 6; i++) {
+		var ccparameters = [];
+		var note_gates = [];
+		var note_pitches = [];
+		var pitch_bends = [];
+
+		for (k = 0; k < 7; k++) {
+			ccparameters[k] = {
+				enable: 0,
+				inverse: 0,
+				scale: 1,
+				rise: 0,
+				fall: 0,
+				shape: 0,
+				midich: 1,
+				controller: 16,
+				highres: 0,
+				solo: 0
+			};
+			note_gates[k] = {
+				enable: 0,
+				inverse: 0,
+				threshold: 1
+			};
+			note_pitches[k] = {
+				note_min: 0,
+				note_max: 0,
+				inverse: 0,
+				midich: 1
+			};
+			pitch_bends[k] = {
+				enable: 0,
+				inverse: 0,
+				scale: 0,
+				midich: 1
+			};
+		}
+		sensors[i] = {
+			ccparam: ccparameters,
+			note_gate: note_gates,
+			note_pitch: note_pitches,
+			pitchbend: pitch_bends
+		}
+	}
+	var tmp_dict = {
+		sensor: sensors
+	}
+	snsr.parse(JSON.stringify(tmp_dict));
+	update_UI();
 }
