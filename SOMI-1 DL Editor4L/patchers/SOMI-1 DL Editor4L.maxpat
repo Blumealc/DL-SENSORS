@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 634.0, 273.0, 640.0, 480.0 ],
+		"rect" : [ 34.0, 106.0, 1203.0, 957.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,24 +40,13 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
-					"id" : "obj-113",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 721.843985716501834, 433.380928337574005, 42.0, 22.0 ],
-					"text" : "print a"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-110",
+					"id" : "obj-116",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 792.198598086833954, 331.914900541305542, 179.0, 22.0 ],
-					"text" : "get sensor[1]::ccparam[1]::scale"
+					"patching_rect" : [ 700.740717768669128, 73.333330929279327, 93.0, 22.0 ],
+					"text" : "reset_dictionary"
 				}
 
 			}
@@ -79,7 +68,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.177319049835205, 528.380928337574005, 199.29078221321106, 196.453902721405029 ]
+					"patching_rect" : [ 675.177319049835205, 409.862413704395294, 199.29078221321106, 196.453902721405029 ]
 				}
 
 			}
@@ -94,7 +83,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -106,7 +95,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -118,7 +107,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -130,7 +119,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -142,7 +131,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -154,10 +143,144 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
 									}
  ]
 							}
@@ -169,7 +292,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -181,7 +304,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -193,7 +316,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -205,7 +328,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -217,7 +340,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -229,10 +352,144 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
 									}
  ]
 							}
@@ -244,7 +501,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -256,7 +513,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -268,7 +525,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -280,7 +537,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -292,7 +549,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -304,10 +561,144 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
 									}
  ]
 							}
@@ -319,7 +710,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -331,7 +722,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -343,7 +734,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -355,7 +746,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -367,7 +758,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -379,10 +770,144 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
 									}
  ]
 							}
@@ -394,7 +919,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -406,7 +931,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -418,7 +943,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -430,7 +955,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -442,7 +967,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -454,10 +979,144 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
 									}
  ]
 							}
@@ -469,7 +1128,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -481,7 +1140,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -493,7 +1152,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -505,7 +1164,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -517,7 +1176,7 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -529,10 +1188,144 @@
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
-										"midich" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
 									}
  ]
 							}
@@ -738,7 +1531,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.250998437404633, 433.380928337574005, 158.0, 33.0 ],
+					"patching_rect" : [ 60.250998437404633, 433.380928337574005, 160.0, 33.0 ],
 					"text" : "Just for testing to demo bug in JS ParameterListener"
 				}
 
@@ -2634,8 +3427,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-81", 0 ],
-					"source" : [ "obj-110", 0 ]
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-116", 0 ]
 				}
 
 			}
@@ -2949,13 +3742,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"source" : [ "obj-77", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-113", 0 ],
-					"source" : [ "obj-81", 1 ]
 				}
 
 			}

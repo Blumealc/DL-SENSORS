@@ -2,8 +2,8 @@
 	"name" : "SOMI-1 DL Editor4L",
 	"version" : 1,
 	"creationdate" : 3756542150,
-	"modificationdate" : 3756550072,
-	"viewrect" : [ 142.0, 227.0, 300.0, 500.0 ],
+	"modificationdate" : 3757165632,
+	"viewrect" : [ 115.0, 628.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -19,12 +19,12 @@
 		}
 ,
 		"code" : 		{
-			"somi-1_sysex_interface_test.js" : 			{
+			"somi-1_sysex_interface.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
 ,
-			"somi-1_sysex_interface.js" : 			{
+			"somi-1_sysex_interface_test.js" : 			{
 				"kind" : "javascript",
 				"local" : 1
 			}
@@ -42,7 +42,7 @@
 	}
 ,
 	"detailsvisible" : 0,
-	"amxdtype" : 0,
+	"amxdtype" : 1835887981,
 	"readonly" : 0,
 	"devpathtype" : 0,
 	"devpath" : ".",

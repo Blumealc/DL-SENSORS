@@ -617,6 +617,8 @@ function sensorSelectCb(data){
     gSensorId = data.value;
 
     getSettings();
+	// try with sensor - may be recursive??
+	update_UI();
 }
 function ccParamCb(data){
 
@@ -682,20 +684,68 @@ function ccSoloCb(data){
     outlet(0, createSysExCmdCcSolo(gCcMidiChannel, gCcController, gCcSolo));
 }
 
-function noteParamGateCb(data){ gNoteParamGate = data.value; }
-function noteEnableCb(data){ gNoteEnable = data.value; }
-function noteGateInverseCb(data){ gNoteGateInverse = data.value; }
-function noteThresholdCb(data){ gNoteThreshold = data.value; }
-function noteParamPitchCb(data){ gNoteParamPitch = data.value; }
-function noteMinCb(data){ gNoteMin = 127 - data.value; }
-function noteMaxCb(data){ gNoteMax = 127 - data.value; }
-function notePitchInverseCb(data){ gNotePitchInverse = data.value; }
-function noteMidiChannelCb(data){ gNoteMidiChannel = data.value - 1; }
-function pbParamCb(data){ gPbParam = data.value; }
-function pbEnableCb(data){ gPbEnable = data.value; }
-function pbInverseCb(data){ gPbInverse = data.value; }
-function pbScaleCb(data){ gPbScale = data.value; }
-function pbMidiChannelCb(data){ gPbMidiChannel = data.value - 1; }
+// change dict - send reqeust like CcParam?
+function noteParamGateCb(data){ 
+	gNoteParamGate = data.value;
+	update_UI();
+}
+function noteEnableCb(data){ 
+	gNoteEnable = data.value; 
+	snsr.set("sensor["+gSensorId+"]::note_gate["+gNoteParamGate+"]::enable", data.value);
+}
+function noteGateInverseCb(data){ 
+	gNoteGateInverse = data.value; 
+	snsr.set("sensor["+gSensorId+"]::note_gate["+gNoteParamGate+"]::inverse", data.value);
+}
+function noteThresholdCb(data) {
+	gNoteThreshold = data.value;
+	snsr.set("sensor["+gSensorId+"]::note_gate["+gNoteParamGate+"]::threshold", data.value);
+}
+
+// change dict - send reqeust like CcParam?
+function noteParamPitchCb(data) {
+	gNoteParamPitch = data.value;
+	update_UI();
+}
+function noteMinCb(data) {
+	gNoteMin = 127 - data.value;
+	snsr.set("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::note_min", data.value);
+}
+function noteMaxCb(data) {
+	gNoteMax = 127 - data.value; 
+	snsr.set("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::note_max", data.value);
+}
+function notePitchInverseCb(data) {
+	gNotePitchInverse = data.value; 
+	snsr.set("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::inverse", data.value);
+}
+function noteMidiChannelCb(data) {
+	gNoteMidiChannel = data.value - 1;
+	snsr.set("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::midich", data.value);
+}
+
+// change dict - send reqeust like CcParam?
+function pbParamCb(data) {
+	gPbParam = data.value;
+	update_UI();
+}
+function pbEnableCb(data) {
+	gPbEnable = data.value;
+	snsr.set("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::enable", data.value);
+}
+function pbInverseCb(data) {
+	gPbInverse = data.value;
+	snsr.set("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::inverse", data.value);
+}
+function pbScaleCb(data) {
+	gPbScale = data.value;
+	snsr.set("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::scale", data.value);
+}
+function pbMidiChannelCb(data) {
+	gPbMidiChannel = data.value - 1;
+	snsr.set("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::midich", data.value);
+}
+
 function rstMappingsCb(data){
     if (data.value)
         outlet(0, createSysExCmdRstMappings());
@@ -1112,6 +1162,23 @@ function update_UI() {
 	this.patcher.getnamed("somi1.cc_controller").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::controller"));
 	this.patcher.getnamed("somi1.cc_high_res").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::highres"));
 	this.patcher.getnamed("somi1.cc_solo").message("set", snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::solo"));
+
+	// Note Gate Section
+	this.patcher.getnamed("somi1.note_enable").message("set", snsr.get("sensor["+gSensorId+"]::note_gate["+gNoteParamGate+"]::enable"));
+	this.patcher.getnamed("somi1.note_gate_inverse").message("set", snsr.get("sensor["+gSensorId+"]::note_gate["+gNoteParamGate+"]::inverse"));
+	this.patcher.getnamed("somi1.note_threshold").message("set", snsr.get("sensor["+gSensorId+"]::note_gate["+gNoteParamGate+"]::threshold"));
+
+	// Note Pitch Section
+	this.patcher.getnamed("somi1.note_midi_channel").message("set", snsr.get("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::midich"));
+	this.patcher.getnamed("somi1.note_pitch_inverse").message("set", snsr.get("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::inverse"));
+	this.patcher.getnamed("somi1.note_min").message("set", snsr.get("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::note_min"));
+	this.patcher.getnamed("somi1.note_max").message("set", snsr.get("sensor["+gSensorId+"]::note_pitch["+gNoteParamPitch+"]::note_max"));
+
+	// Pitch bend Section
+	this.patcher.getnamed("somi1.pb_enable").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::enable"));
+	this.patcher.getnamed("somi1.pb_inverse").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::inverse"));
+	this.patcher.getnamed("somi1.pb_scale").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::scale"));
+	this.patcher.getnamed("somi1.pb_midi_channel").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::midich"));
 }
 
 // Resets dictionary to default
