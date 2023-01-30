@@ -3,16 +3,17 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 106.0, 1203.0, 957.0 ],
+		"rect" : [ 42.0, 85.0, 870.0, 960.0 ],
+		"openrect" : [ 0.0, 0.0, 544.0, 169.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -40,6 +41,91 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-108",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 864.0, 107.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-99",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 720.0, 137.0, 69.0, 22.0 ],
+					"text" : "getSettings"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-104",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 121.0, 336.839476048946381, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-102",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 254.0, 551.0, 50.0, 22.0 ],
+					"text" : "22 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-100",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 8,
+					"outlettype" : [ "", "", "", "int", "int", "", "int", "" ],
+					"patching_rect" : [ 264.0, 492.0, 92.5, 22.0 ],
+					"text" : "midiparse"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-80",
+					"linecount" : 5,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 318.0, 568.0, 52.0, 77.0 ],
+					"text" : "240 0 33 114 1 0 0 0 0 0 8 247"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 564.0, 439.380928337574005, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-116",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -58,7 +144,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 675.177319049835205, 336.839476048946381, 24.0, 24.0 ]
+					"patching_rect" : [ 523.177319049835205, 439.380928337574005, 24.0, 24.0 ]
 				}
 
 			}
@@ -68,7 +154,7 @@
 					"maxclass" : "dict.view",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 675.177319049835205, 409.862413704395294, 199.29078221321106, 196.453902721405029 ]
+					"patching_rect" : [ 523.177319049835205, 512.403865993022919, 201.29078221321106, 281.453902721405029 ]
 				}
 
 			}
@@ -79,10 +165,219 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
+										"scale" : 0.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 0,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.877952754497528,
+										"midich" : 0,
+										"controller" : 17,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0.62992125749588,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.547244071960449,
+										"midich" : 0,
+										"controller" : 18,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
 										"scale" : 1,
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 1,
+										"inverse" : 0,
+										"threshold" : 0.496062994003296
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 91,
+										"note_max" : 50,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
 										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
@@ -288,11 +583,11 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
+										"scale" : 2.023622035980225,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.657480299472809,
+										"midich" : 2,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -497,11 +792,11 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 3,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -706,11 +1001,11 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 4,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -915,220 +1210,11 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
- ],
-								"note_gate" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
- ],
-								"note_pitch" : [ 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
- ],
-								"pitchbend" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
- ]
-							}
-, 							{
-								"ccparam" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 5,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -1337,7 +1423,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 4,
 					"outlettype" : [ "dictionary", "", "", "" ],
-					"patching_rect" : [ 675.177319049835205, 377.867843925952911, 159.0, 22.0 ],
+					"patching_rect" : [ 523.177319049835205, 480.409296214580536, 159.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_invisible" : 1,
@@ -1377,7 +1463,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.666677713394165, 366.666677594184875, 150.0, 87.0 ],
+					"patching_rect" : [ 370.666677713394165, 366.666677594184875, 150.0, 89.0 ],
 					"text" : "linea modificata 635 con aggiunta di array_mio come prima variabile\n\n- creare dizionario che gestisce tutti i valori"
 				}
 
@@ -1413,7 +1499,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1113.75, 436.5, 154.0, 60.0 ],
+					"patching_rect" : [ 1113.75, 436.5, 154.0, 62.0 ],
 					"text" : "This re enables automation\nin Live after UI elements have been updated with values received via SysEx"
 				}
 
@@ -1531,7 +1617,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.250998437404633, 433.380928337574005, 160.0, 33.0 ],
+					"patching_rect" : [ 60.250998437404633, 433.380928337574005, 160.0, 34.0 ],
 					"text" : "Just for testing to demo bug in JS ParameterListener"
 				}
 
@@ -1629,9 +1715,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 142.57042033970356, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Invert currently selected Note pitch input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_pitch_inverse",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.note_pitch_inverse",
@@ -1661,9 +1756,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 198.280375450849533, 58.632326662540436, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Invert currently selected Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_inverse",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.cc_inverse",
@@ -1693,9 +1797,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 305.716996341943741, 58.632326662540436, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Invert currently selected Note gate input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_gate_inverse",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.note_gate_inverse",
@@ -1724,8 +1837,17 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 411.083906084299088, 58.632326662540436, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.pb_inverse",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.pb_inverse",
@@ -1797,8 +1919,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1963,9 +2085,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 281.713483035564423, 125.995181918144226, 39.852113008499146, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "G8", "F#8", "F8", "E8", "D#8", "D8", "C#8", "C8", "B7", "A#7", "A7", "G#7", "G7", "F#7", "F7", "E7", "D#7", "D7", "C#7", "C7", "B6", "A#6", "A6", "G#6", "G6", "F#6", "F6", "E6", "D#6", "D6", "C#6", "C6", "B5", "A#5", "A5", "G#5", "G5", "F#5", "F5", "E5", "D#5", "D5", "C#5", "C5", "B4", "A#4", "A4", "G#4", "G4", "F#4", "F4", "E4", "D#4", "D4", "C#4", "C4", "B3", "A#3", "A3", "G#3", "G3", "F#3", "F3", "E3", "D#3", "D3", "C#3", "C3", "B2", "A#2", "A2", "G#2", "G2", "F#2", "F2", "E2", "D#2", "D2", "C#2", "C2", "B1", "A#1", "A1", "G#1", "G1", "F#1", "F1", "E1", "D#1", "D1", "C#1", "C1", "B0", "A#0", "A0", "G#0", "G0", "F#0", "F0", "E0", "D#0", "D0", "C#0", "C0", "B-1", "A#-1", "A-1", "G#-1", "G-1", "F#-1", "F-1", "E-1", "D#-1", "D-1", "C#-1", "C-1", "B-2", "A#-2", "A-2", "G#-2", "G-2", "F#-2", "F-2", "E-2", "D#-2", "D-2", "C#-2", "C-2" ],
 							"parameter_info" : "Select maximum note pitch.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_max",
 							"parameter_shortname" : "somi1.note_max",
 							"parameter_type" : 2
@@ -1993,9 +2120,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 125.995181918144226, 39.852113008499146, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "G8", "F#8", "F8", "E8", "D#8", "D8", "C#8", "C8", "B7", "A#7", "A7", "G#7", "G7", "F#7", "F7", "E7", "D#7", "D7", "C#7", "C7", "B6", "A#6", "A6", "G#6", "G6", "F#6", "F6", "E6", "D#6", "D6", "C#6", "C6", "B5", "A#5", "A5", "G#5", "G5", "F#5", "F5", "E5", "D#5", "D5", "C#5", "C5", "B4", "A#4", "A4", "G#4", "G4", "F#4", "F4", "E4", "D#4", "D4", "C#4", "C4", "B3", "A#3", "A3", "G#3", "G3", "F#3", "F3", "E3", "D#3", "D3", "C#3", "C3", "B2", "A#2", "A2", "G#2", "G2", "F#2", "F2", "E2", "D#2", "D2", "C#2", "C2", "B1", "A#1", "A1", "G#1", "G1", "F#1", "F1", "E1", "D#1", "D1", "C#1", "C1", "B0", "A#0", "A0", "G#0", "G0", "F#0", "F0", "E0", "D#0", "D0", "C#0", "C0", "B-1", "A#-1", "A-1", "G#-1", "G-1", "F#-1", "F-1", "E-1", "D#-1", "D-1", "C#-1", "C-1", "B-2", "A#-2", "A-2", "G#-2", "G-2", "F#-2", "F-2", "E-2", "D#-2", "D-2", "C#-2", "C-2" ],
 							"parameter_info" : "Select minimum note pitch.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_min",
 							"parameter_shortname" : "somi1.note_min",
 							"parameter_type" : 2
@@ -2056,6 +2188,30 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 513.247949182987213, 38.5, 8.44285973906517, 8.20124581314704 ],
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_info" : "Turns yellow if SOMI-1 hub is connected and ready to use. Otherwise grey.",
@@ -2096,9 +2252,34 @@
 					"presentation_rect" : [ 466.359890937805176, 125.995181918144226, 51.777778148651123, 15.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"textoffcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Apply Button Off", "Apply Button On (Trigger)" ],
 							"parameter_info" : "Apply currently shown Control Change, Note and Pitch Bend settings. Note: Settings are not saved or rather overwritten in internal flash memory of SOMI-1 hub.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.apply",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.apply",
@@ -2134,8 +2315,33 @@
 					"presentation_rect" : [ 466.359890937805176, 142.690138638019562, 51.777778148651123, 14.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"textoffcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.save",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.save",
@@ -2204,9 +2410,14 @@
 					"presentation_rect" : [ 466.359890937805176, 95.0, 51.777778148651123, 15.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Resets all known sensor information (e.g. IDs of known sensors) to factory defaults. Note: Sensor informations are not saved or rather overwritten in internal flash memory of SOMI-1 hub.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.rst_sensors",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.rst_sensors",
@@ -2238,9 +2449,14 @@
 					"presentation_rect" : [ 466.359890937805176, 79.0, 51.777778148651123, 15.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Resets mappings of all sensors (i.e. Control Change, Notes and Pitch Bend settings) to factory default. Note: Mappings are not saved or rather overwritten in internal flash memory of SOMI-1 hub.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.rst_mappings",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.rst_mappings",
@@ -2263,7 +2479,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 440.175004124641418, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 440.175004124641418, -0.263159155845642, 6.408450722694397, 168.74203234910965 ]
+					"presentation_rect" : [ 440.175004124641418, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -2284,6 +2507,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change MIDI Channel of currently selected sensor used to transmit Pitch Bend messages.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.pb_midi_channel",
 							"parameter_mmax" : 16.0,
 							"parameter_mmin" : 1.0,
@@ -2349,6 +2573,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Scale currently selected Pitch Bend input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.pb_scale",
 							"parameter_mmax" : 10.0,
 							"parameter_shortname" : "somi1.pb_scale",
@@ -2396,9 +2621,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 344.426964342594147, 58.632326662540436, 39.774647831916809, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable Pitch Bend of currently selected sensor.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.pb_enable",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.pb_enable",
@@ -2446,9 +2680,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 344.426964342594147, 42.632326662540436, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Pitch Bend input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.pb_param",
 							"parameter_mmax" : 6,
 							"parameter_shortname" : "somi1.pb_param",
@@ -2505,7 +2744,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.128976464271545, 7.0, 5.0, 155.153453469276428 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 333.128976464271545, 7.0, 5.0, 155.153453469276428 ]
+					"presentation_rect" : [ 333.128976464271545, 7.0, 5.0, 155.153453469276428 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -2526,6 +2772,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change MIDI Channel of currently selected sensor used to transmit Note messages.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_midi_channel",
 							"parameter_mmax" : 16.0,
 							"parameter_mmin" : 1.0,
@@ -2556,9 +2803,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 108.619719445705414, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Note pitch input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_param_pitch",
 							"parameter_mmax" : 6,
 							"parameter_shortname" : "somi1.note_param_pitch",
@@ -2622,6 +2874,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Threshold used to distinguish between Note On/Off based on input gate movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_threshold",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "somi1.note_threshold",
@@ -2652,9 +2905,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 58.632326662540436, 39.660449266433716, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable Notes of currently selected sensor.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_enable",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.note_enable",
@@ -2702,9 +2964,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 42.632326662540436, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Note gate (i.e. to switch between Note On/Off) input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.note_param_gate",
 							"parameter_mmax" : 6,
 							"parameter_shortname" : "somi1.note_param_gate",
@@ -2726,7 +2993,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 226.197185933589935, 7.0, 5.0, 155.153453469276428 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 226.197185933589935, 7.0, 5.0, 155.153453469276428 ]
+					"presentation_rect" : [ 226.197185933589935, 7.0, 5.0, 155.153453469276428 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -2750,9 +3024,34 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 175.171228766441345, 142.690138638019562, 39.852113008499146, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Solo/Unsolo currently selected Control Change Controller (suitable to use MIDI learn functionality of Ableton Live).",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_solo",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.cc_solo",
@@ -2785,9 +3084,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.623433709144592, 142.690138638019562, 39.852113008499146, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable high resolution (14bit) Control Change parameter of currently selected input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_high_res",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.cc_high_res",
@@ -2819,6 +3127,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change MIDI Control Change Controller of currently selected input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_controller",
 							"parameter_shortname" : "somi1.cc_controller",
 							"parameter_type" : 1,
@@ -2848,6 +3157,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change MIDI Channel of currently selected input movement parameter and Control Change Controller.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_midi_channel",
 							"parameter_mmax" : 16.0,
 							"parameter_mmin" : 1.0,
@@ -2913,6 +3223,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change slew limiter shape (linear -> exponential) of currently selected Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_slew_shape",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "somi1.cc_slew_shape",
@@ -2943,6 +3254,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change slew limiter fall time of currently selected Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_slew_fall",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "somi1.cc_slew_fall",
@@ -2973,6 +3285,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Change slew limiter rise time of currently selected Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_slew_rise",
 							"parameter_mmax" : 1.0,
 							"parameter_shortname" : "somi1.cc_slew_rise",
@@ -3003,6 +3316,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_info" : "Scale currently selected Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_scale",
 							"parameter_mmax" : 10.0,
 							"parameter_shortname" : "somi1.cc_scale",
@@ -3033,9 +3347,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.623433709144592, 58.632326662540436, 39.774647831916809, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable currently selected Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_enable",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "somi1.cc_enable",
@@ -3083,9 +3406,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.623433709144592, 42.632326662540436, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Control Change input movement parameter.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.cc_param",
 							"parameter_mmax" : 6,
 							"parameter_shortname" : "somi1.cc_param",
@@ -3124,7 +3452,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 117.578951716423035, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 117.578951716423035, -0.263159155845642, 6.408450722694397, 168.74203234910965 ]
+					"presentation_rect" : [ 117.578951716423035, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -3149,6 +3484,34 @@
 					"presentation_rect" : [ 82.0, 10.248251765966415, 36.0, 11.503496468067169 ],
 					"remapsvgcolors" : 1,
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
@@ -3169,13 +3532,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 9.5,
 					"id" : "obj-15",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 137.0, 36.0, 21.0 ],
+					"patching_rect" : [ 82.0, 137.0, 33.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, 137.0, 36.0, 21.0 ],
+					"presentation_rect" : [ 82.0, 137.0, 33.0, 18.0 ],
 					"text" : "-",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3186,13 +3550,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 9.5,
 					"id" : "obj-14",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 115.0, 36.0, 21.0 ],
+					"patching_rect" : [ 82.0, 115.0, 33.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, 115.0, 36.0, 21.0 ],
+					"presentation_rect" : [ 82.0, 115.0, 33.0, 18.0 ],
 					"text" : "-",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3203,13 +3568,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 9.5,
 					"id" : "obj-13",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 94.0, 36.0, 21.0 ],
+					"patching_rect" : [ 82.0, 94.0, 33.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, 94.0, 36.0, 21.0 ],
+					"presentation_rect" : [ 82.0, 94.0, 33.0, 18.0 ],
 					"text" : "-",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3220,13 +3586,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 9.5,
 					"id" : "obj-12",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 73.0, 36.0, 21.0 ],
+					"patching_rect" : [ 82.0, 73.0, 33.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, 73.0, 36.0, 21.0 ],
+					"presentation_rect" : [ 82.0, 73.0, 33.0, 18.0 ],
 					"text" : "-",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3237,13 +3604,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 9.5,
 					"id" : "obj-11",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 52.0, 36.0, 21.0 ],
+					"patching_rect" : [ 82.0, 52.0, 36.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, 52.0, 36.0, 21.0 ],
+					"presentation_rect" : [ 82.0, 52.0, 36.0, 18.0 ],
 					"text" : "-",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3254,13 +3622,14 @@
 , 			{
 				"box" : 				{
 					"fontname" : "Ableton Sans Medium",
+					"fontsize" : 9.5,
 					"id" : "obj-10",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 82.0, 31.0, 36.0, 21.0 ],
+					"patching_rect" : [ 82.0, 31.0, 36.0, 18.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 82.0, 31.0, 36.0, 21.0 ],
+					"presentation_rect" : [ 82.0, 31.0, 36.0, 18.0 ],
 					"text" : "-",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"textjustification" : 1,
@@ -3304,9 +3673,18 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 29.0, 69.0, 127.0 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6" ],
 							"parameter_info" : "Select sensor to configure.",
+							"parameter_invisible" : 2,
 							"parameter_longname" : "somi1.sensor_select",
 							"parameter_mmax" : 5,
 							"parameter_shortname" : "somi1.sensor_select",
@@ -3414,6 +3792,7 @@
 		"lines" : [ 			{
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
 					"source" : [ "obj-1", 0 ]
 				}
 
@@ -3422,6 +3801,29 @@
 				"patchline" : 				{
 					"destination" : [ "obj-78", 0 ],
 					"source" : [ "obj-1", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-80", 1 ],
+					"order" : 0,
+					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-102", 1 ],
+					"source" : [ "obj-100", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-99", 0 ],
+					"midpoints" : [ 873.5, 132.0, 801.0, 132.0, 801.0, 123.0, 729.5, 123.0 ],
+					"source" : [ "obj-108", 0 ]
 				}
 
 			}
@@ -3492,6 +3894,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-30", 0 ],
 					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-98", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
@@ -3712,6 +4121,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-100", 0 ],
+					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 24 ],
 					"source" : [ "obj-71", 0 ]
 				}
@@ -3796,7 +4212,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-104", 0 ],
+					"order" : 0,
+					"source" : [ "obj-97", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
+					"order" : 1,
 					"source" : [ "obj-97", 0 ]
 				}
 
@@ -3805,6 +4230,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"source" : [ "obj-98", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-99", 0 ]
 				}
 
 			}
@@ -3852,15 +4284,29 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "battery_icon.svg",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/media",
+				"patcherrelativepath" : "../media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "invert_icon.svg",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/media",
+				"patcherrelativepath" : "../media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "somi-1_sysex_interface.js",
-				"bootpath" : "~/Documents/Github/DL-SENSORS/SOMI-1 DL Editor4L/code",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somi-1_sysex_interface_test.js",
-				"bootpath" : "~/Documents/Github/DL-SENSORS/SOMI-1 DL Editor4L/code",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1

@@ -496,6 +496,7 @@ function list(){
 				return;
 			}
 
+			
 			gSensorId 	   = array[11];
 			//var slotIdx  = array[12];
 			gCcEnable 	   = array[13];
@@ -508,8 +509,18 @@ function list(){
 			gCcSlewShape   = byteToFloat([array[24], array[25], array[26], array[27], array[28]]);
 			gCcSlewRise    = byteToFloat([array[29], array[30], array[31], array[32], array[33]]);
 			gCcSlewFall    = byteToFloat([array[34], array[35], array[36], array[37], array[38]]);
+			
+			// Sets values to dictionary
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::inverse", gCcInverse);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::scale", gCcScale);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::rise", gCcSlewRise);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::fall", gCcSlewFall);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::shape", gCcSlewShape);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::midich", gCcMidiChannel);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::controller", gCcController);
+			snsr.set("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::highres", gCcHighRes);
 
-            this.patcher.getnamed("somi1.cc_enable").message("set", gCcEnable);
+			this.patcher.getnamed("somi1.cc_enable").message("set", gCcEnable);
             this.patcher.getnamed("somi1.cc_midi_channel").message("set", gCcMidiChannel+1);
             //this.patcher.getnamed("somi1.cc_param").message("set", gCcParam); // Leads to deactivation of automation in Live
             this.patcher.getnamed("somi1.cc_controller").message("set", gCcController);
@@ -519,7 +530,7 @@ function list(){
             this.patcher.getnamed("somi1.cc_slew_shape").message("set", gCcSlewShape);
             this.patcher.getnamed("somi1.cc_slew_rise").message("set", gCcSlewRise);
             this.patcher.getnamed("somi1.cc_slew_fall").message("set", gCcSlewFall);
-
+			
 			outlet(1, 'bang');
 		}
 		break;
@@ -616,9 +627,9 @@ function sensorSelectCb(data){
 
     gSensorId = data.value;
 
-    getSettings();
 	// try with sensor - may be recursive??
-	update_UI();
+    getSettings();
+	unsolo();
 }
 function ccParamCb(data){
 
@@ -639,7 +650,9 @@ function ccParamCb(data){
     }
 
 	gCcParam = data.value;
+
 	//this.patcher.getnamed("somi1.cc_scale").message("set", snsr[gSensorId].ccparam[gCcParam].scale);
+	unsolo();
 	update_UI();
 }
 function ccEnableCb(data) {
@@ -1148,6 +1161,15 @@ function floatToByte(floatVal){
     return byteArray;
 }
 
+// Unsolo all when param changes 
+function unsolo() {
+	for (sid = 0; sid < 6; sid++) {
+		for (i = 0; i < 7; i++) {
+			snsr.set("sensor["+sid+"]::ccparam["+i+"]::solo", 0);
+			//this.patcher.getnamed("somi1.cc_solo").message("set", 0);
+		}
+	}
+} 
 // Updates all parameters shown in the UI by the live objects
 function update_UI() {
 

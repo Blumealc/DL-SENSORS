@@ -2,8 +2,8 @@
 	"name" : "SOMI-1 DL Editor4L",
 	"version" : 1,
 	"creationdate" : 3756542150,
-	"modificationdate" : 3757165632,
-	"viewrect" : [ 115.0, 628.0, 300.0, 500.0 ],
+	"modificationdate" : 3757930355,
+	"viewrect" : [ 167.0, 419.0, 300.0, 500.0 ],
 	"autoorganize" : 1,
 	"hideprojectwindow" : 0,
 	"showdependencies" : 1,
@@ -14,6 +14,19 @@
 				"kind" : "patcher",
 				"local" : 1,
 				"toplevel" : 1
+			}
+
+		}
+,
+		"media" : 		{
+			"battery_icon.svg" : 			{
+				"kind" : "vectorimagefile",
+				"local" : 1
+			}
+,
+			"invert_icon.svg" : 			{
+				"kind" : "vectorimagefile",
+				"local" : 1
 			}
 
 		}
@@ -47,5 +60,6 @@
 	"devpathtype" : 0,
 	"devpath" : ".",
 	"sortmode" : 0,
-	"viewmode" : 1
+	"viewmode" : 1,
+	"includepackages" : 0
 }
