@@ -630,6 +630,7 @@ function sensorSelectCb(data){
 	// try with sensor - may be recursive??
     getSettings();
 	unsolo();
+	update_UI();
 }
 function ccParamCb(data){
 
