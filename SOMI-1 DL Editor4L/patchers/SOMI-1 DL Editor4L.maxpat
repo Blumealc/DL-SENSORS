@@ -45,7 +45,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 700.740717768669128, 73.333330929279327, 93.0, 22.0 ],
+					"patching_rect" : [ 675.177319049835205, 73.0, 93.0, 22.0 ],
 					"text" : "reset_dictionary"
 				}
 
