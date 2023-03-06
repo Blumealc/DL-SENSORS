@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 10,
+			"minor" : 5,
+			"revision" : 2,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 106.0, 1732.0, 958.0 ],
+		"rect" : [ 34.0, 85.0, 3063.0, 1329.0 ],
 		"openrect" : [ 0.0, 0.0, 544.0, 169.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -40,6 +40,5318 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-145",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 448.5, 542.220404386520386, 61.0, 22.0 ],
+					"text" : "callPreset"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-143",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 917.5, 694.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-141",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 889.0, 688.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-139",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 952.0, 699.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-137",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 847.0, 671.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-135",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 982.0, 558.0, 41.0, 22.0 ],
+					"text" : "pipe 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-134",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 480.248780012130737, 512.403865993022919, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-132",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 778.5, 418.5, 35.0, 22.0 ],
+					"text" : "del 5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-131",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 906.5, 525.5, 33.0, 22.0 ],
+					"text" : "== 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-130",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 982.5, 525.5, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-128",
+					"maxclass" : "newobj",
+					"numinlets" : 5,
+					"numoutlets" : 5,
+					"outlettype" : [ "", "", "", "", "" ],
+					"patching_rect" : [ 1083.5, 575.380928337574005, 76.0, 22.0 ],
+					"text" : "route 1 2 3 4"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"sensor" : [ 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 4,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 0,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+ ]
+					}
+,
+					"id" : "obj-125",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 1205.5, 642.130817353725433, 106.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict p4 @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"sensor" : [ 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 3,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 0,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+ ]
+					}
+,
+					"id" : "obj-124",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 1094.0, 642.130817353725433, 106.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict p3 @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"sensor" : [ 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 2,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 0,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+ ]
+					}
+,
+					"id" : "obj-123",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 982.5, 642.130817353725433, 106.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict p2 @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"data" : 					{
+						"sensor" : [ 							{
+								"ccparam" : [ 									{
+										"enable" : 1,
+										"inverse" : 0,
+										"scale" : 5.204724409448817,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 0,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1.0,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+ ]
+					}
+,
+					"id" : "obj-122",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 4,
+					"outlettype" : [ "dictionary", "", "", "" ],
+					"patching_rect" : [ 870.0, 642.130817353725433, 106.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"embed" : 1,
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "dict p1 @embed 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-121",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 784.5, 386.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-119",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 870.0, 367.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-113",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 6,
+					"outlettype" : [ "", "", "", "", "", "" ],
+					"patching_rect" : [ 870.0, 593.403865993022919, 71.5, 22.0 ],
+					"text" : "gate 6"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 128.0, 194.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-92",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 1083.5, 188.5, 55.0, 22.0 ],
+					"restore" : [ 0.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_longname" : "mio",
+							"parameter_shortname" : "mio",
+							"parameter_type" : 0
+						}
+
+					}
+,
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 1,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr mio",
+					"varname" : "mio"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-108",
 					"maxclass" : "newobj",
@@ -102,13 +5414,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-80",
-					"linecount" : 5,
+					"linecount" : 7,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 318.0, 568.0, 52.0, 76.0 ],
-					"text" : "240 0 33 114 1 0 0 0 0 0 12 2 0 247"
+					"patching_rect" : [ 318.0, 568.0, 55.0, 105.0 ],
+					"text" : "240 0 33 114 1 0 0 0 0 0 5 0 0 0 2 3 3 124 0 0 0 0 247"
 				}
 
 			}
@@ -163,94 +5475,94 @@
 					"data" : 					{
 						"sensor" : [ 							{
 								"ccparam" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0.0,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.5,
-										"midich" : 0,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1.0,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.877952754497528,
-										"midich" : 0,
-										"controller" : 17,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0.62992125749588,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.547244071960449,
-										"midich" : 0,
-										"controller" : 18,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
- ],
-								"note_gate" : [ 									{
 										"enable" : 1,
 										"inverse" : 0,
-										"threshold" : 0.496062994003296
+										"scale" : 5.204724311828613,
+										"rise" : 0.0,
+										"fall" : 0.0,
+										"shape" : 0.5,
+										"midich" : 0,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
 									}
 , 									{
 										"enable" : 0,
@@ -296,8 +5608,8 @@
 										"midich" : 1
 									}
 , 									{
-										"note_min" : 91,
-										"note_max" : 50,
+										"note_min" : 0,
+										"note_max" : 0,
 										"inverse" : 0,
 										"midich" : 1
 									}
@@ -347,7 +5659,7 @@
 , 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1,
+										"scale" : 0,
 										"midich" : 1
 									}
 , 									{
@@ -583,220 +5895,11 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 2.023622035980225,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.657480299472809,
-										"midich" : 2,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
 										"scale" : 1,
 										"rise" : 0,
 										"fall" : 0,
 										"shape" : 0,
 										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1,
-										"rise" : 0,
-										"fall" : 0,
-										"shape" : 0,
-										"midich" : 1,
-										"controller" : 16,
-										"highres" : 0,
-										"solo" : 0
-									}
- ],
-								"note_gate" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"threshold" : 1
-									}
- ],
-								"note_pitch" : [ 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
-, 									{
-										"note_min" : 0,
-										"note_max" : 0,
-										"inverse" : 0,
-										"midich" : 1
-									}
- ],
-								"pitchbend" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
-, 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 0,
-										"midich" : 1
-									}
- ]
-							}
-, 							{
-								"ccparam" : [ 									{
-										"enable" : 0,
-										"inverse" : 0,
-										"scale" : 1.0,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.5,
-										"midich" : 3,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -1001,11 +6104,11 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1.0,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.5,
-										"midich" : 4,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -1210,11 +6313,220 @@
 								"ccparam" : [ 									{
 										"enable" : 0,
 										"inverse" : 0,
-										"scale" : 1.0,
-										"rise" : 0.0,
-										"fall" : 0.0,
-										"shape" : 0.5,
-										"midich" : 5,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
+										"controller" : 16,
+										"highres" : 0,
+										"solo" : 0
+									}
+ ],
+								"note_gate" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"threshold" : 1
+									}
+ ],
+								"note_pitch" : [ 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+, 									{
+										"note_min" : 0,
+										"note_max" : 0,
+										"inverse" : 0,
+										"midich" : 1
+									}
+ ],
+								"pitchbend" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+, 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 0,
+										"midich" : 1
+									}
+ ]
+							}
+, 							{
+								"ccparam" : [ 									{
+										"enable" : 0,
+										"inverse" : 0,
+										"scale" : 1,
+										"rise" : 0,
+										"fall" : 0,
+										"shape" : 0,
+										"midich" : 1,
 										"controller" : 16,
 										"highres" : 0,
 										"solo" : 0
@@ -1463,7 +6775,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 370.666677713394165, 366.666677594184875, 150.0, 87.0 ],
+					"patching_rect" : [ 370.666677713394165, 366.666677594184875, 150.0, 89.0 ],
 					"text" : "linea modificata 635 con aggiunta di array_mio come prima variabile\n\n- creare dizionario che gestisce tutti i valori"
 				}
 
@@ -1499,7 +6811,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1113.75, 436.5, 154.0, 60.0 ],
+					"patching_rect" : [ 1113.75, 436.5, 154.0, 62.0 ],
 					"text" : "This re enables automation\nin Live after UI elements have been updated with values received via SysEx"
 				}
 
@@ -1617,7 +6929,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 60.250998437404633, 433.380928337574005, 160.0, 33.0 ],
+					"patching_rect" : [ 60.250998437404633, 433.380928337574005, 160.0, 34.0 ],
 					"text" : "Just for testing to demo bug in JS ParameterListener"
 				}
 
@@ -1715,6 +7027,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 142.57042033970356, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Invert currently selected Note pitch input movement parameter.",
@@ -1748,6 +7068,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 198.280375450849533, 58.632326662540436, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Invert currently selected Control Change input movement parameter.",
@@ -1781,6 +7109,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 305.716996341943741, 58.632326662540436, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Invert currently selected Note gate input movement parameter.",
@@ -1813,6 +7149,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 411.083906084299088, 58.632326662540436, 15.848599702119827, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
@@ -1887,8 +7231,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 8,
-							"minor" : 1,
-							"revision" : 10,
+							"minor" : 5,
+							"revision" : 2,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2053,6 +7397,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 281.713483035564423, 125.995181918144226, 39.852113008499146, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "G8", "F#8", "F8", "E8", "D#8", "D8", "C#8", "C8", "B7", "A#7", "A7", "G#7", "G7", "F#7", "F7", "E7", "D#7", "D7", "C#7", "C7", "B6", "A#6", "A6", "G#6", "G6", "F#6", "F6", "E6", "D#6", "D6", "C#6", "C6", "B5", "A#5", "A5", "G#5", "G5", "F#5", "F5", "E5", "D#5", "D5", "C#5", "C5", "B4", "A#4", "A4", "G#4", "G4", "F#4", "F4", "E4", "D#4", "D4", "C#4", "C4", "B3", "A#3", "A3", "G#3", "G3", "F#3", "F3", "E3", "D#3", "D3", "C#3", "C3", "B2", "A#2", "A2", "G#2", "G2", "F#2", "F2", "E2", "D#2", "D2", "C#2", "C2", "B1", "A#1", "A1", "G#1", "G1", "F#1", "F1", "E1", "D#1", "D1", "C#1", "C1", "B0", "A#0", "A0", "G#0", "G0", "F#0", "F0", "E0", "D#0", "D0", "C#0", "C0", "B-1", "A#-1", "A-1", "G#-1", "G-1", "F#-1", "F-1", "E-1", "D#-1", "D-1", "C#-1", "C-1", "B-2", "A#-2", "A-2", "G#-2", "G-2", "F#-2", "F-2", "E-2", "D#-2", "D-2", "C#-2", "C-2" ],
 							"parameter_info" : "Select maximum note pitch.",
@@ -2084,6 +7432,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 125.995181918144226, 39.852113008499146, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "G8", "F#8", "F8", "E8", "D#8", "D8", "C#8", "C8", "B7", "A#7", "A7", "G#7", "G7", "F#7", "F7", "E7", "D#7", "D7", "C#7", "C7", "B6", "A#6", "A6", "G#6", "G6", "F#6", "F6", "E6", "D#6", "D6", "C#6", "C6", "B5", "A#5", "A5", "G#5", "G5", "F#5", "F5", "E5", "D#5", "D5", "C#5", "C5", "B4", "A#4", "A4", "G#4", "G4", "F#4", "F4", "E4", "D#4", "D4", "C#4", "C4", "B3", "A#3", "A3", "G#3", "G3", "F#3", "F3", "E3", "D#3", "D3", "C#3", "C3", "B2", "A#2", "A2", "G#2", "G2", "F#2", "F2", "E2", "D#2", "D2", "C#2", "C2", "B1", "A#1", "A1", "G#1", "G1", "F#1", "F1", "E1", "D#1", "D1", "C#1", "C1", "B0", "A#0", "A0", "G#0", "G0", "F#0", "F0", "E0", "D#0", "D0", "C#0", "C0", "B-1", "A#-1", "A-1", "G#-1", "G-1", "F#-1", "F-1", "E-1", "D#-1", "D-1", "C#-1", "C-1", "B-2", "A#-2", "A-2", "G#-2", "G-2", "F#-2", "F-2", "E-2", "D#-2", "D-2", "C#-2", "C-2" ],
 							"parameter_info" : "Select minimum note pitch.",
@@ -2148,6 +7500,30 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 513.247949182987213, 38.5, 8.44285973906517, 8.20124581314704 ],
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
 							"parameter_info" : "Turns yellow if SOMI-1 hub is connected and ready to use. Otherwise grey.",
@@ -2183,11 +7559,35 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 468.359890937805176, 125.995181918144226, 51.777778148651123, 15.0 ],
+					"patching_rect" : [ 589.064080774784088, 85.0, 51.777778148651123, 15.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 466.359890937805176, 125.995181918144226, 51.777778148651123, 15.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"textoffcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Apply Button Off", "Apply Button On (Trigger)" ],
 							"parameter_info" : "Apply currently shown Control Change, Note and Pitch Bend settings. Note: Settings are not saved or rather overwritten in internal flash memory of SOMI-1 hub.",
@@ -2227,6 +7627,30 @@
 					"presentation_rect" : [ 466.359890937805176, 142.690138638019562, 51.777778148651123, 14.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"textoffcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
@@ -2298,6 +7722,10 @@
 					"presentation_rect" : [ 466.359890937805176, 95.0, 51.777778148651123, 15.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Resets all known sensor information (e.g. IDs of known sensors) to factory defaults. Note: Sensor informations are not saved or rather overwritten in internal flash memory of SOMI-1 hub.",
@@ -2333,6 +7761,10 @@
 					"presentation_rect" : [ 466.359890937805176, 79.0, 51.777778148651123, 15.0 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Resets mappings of all sensors (i.e. Control Change, Notes and Pitch Bend settings) to factory default. Note: Mappings are not saved or rather overwritten in internal flash memory of SOMI-1 hub.",
@@ -2359,7 +7791,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 440.175004124641418, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 440.175004124641418, -0.263159155845642, 6.408450722694397, 168.74203234910965 ]
+					"presentation_rect" : [ 440.175004124641418, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -2494,6 +7933,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 344.426964342594147, 58.632326662540436, 39.774647831916809, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable Pitch Bend of currently selected sensor.",
@@ -2545,6 +7992,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 344.426964342594147, 42.632326662540436, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Pitch Bend input movement parameter.",
@@ -2605,7 +8056,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 333.128976464271545, 7.0, 5.0, 155.153453469276428 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 333.128976464271545, 7.0, 5.0, 155.153453469276428 ]
+					"presentation_rect" : [ 333.128976464271545, 7.0, 5.0, 155.153453469276428 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -2657,6 +8115,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 108.619719445705414, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Note pitch input movement parameter.",
@@ -2755,6 +8217,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 58.632326662540436, 39.660449266433716, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable Notes of currently selected sensor.",
@@ -2806,6 +8276,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 239.0600546002388, 42.632326662540436, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Note gate (i.e. to switch between Note On/Off) input movement parameter.",
@@ -2831,7 +8305,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 226.197185933589935, 7.0, 5.0, 155.153453469276428 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 226.197185933589935, 7.0, 5.0, 155.153453469276428 ]
+					"presentation_rect" : [ 226.197185933589935, 7.0, 5.0, 155.153453469276428 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -2855,6 +8336,30 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 175.171228766441345, 142.690138638019562, 39.852113008499146, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Solo/Unsolo currently selected Control Change Controller (suitable to use MIDI learn functionality of Ableton Live).",
@@ -2891,6 +8396,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.623433709144592, 142.690138638019562, 39.852113008499146, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable high resolution (14bit) Control Change parameter of currently selected input movement parameter.",
@@ -3146,6 +8659,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.623433709144592, 58.632326662540436, 39.774647831916809, 13.239436596632004 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_info" : "Enable/Disable currently selected Control Change input movement parameter.",
@@ -3197,6 +8718,10 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 131.623433709144592, 42.632326662540436, 82.505541443824768, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "Tilt X", "Tilt Y", "Tilt Z", "Acceleration X", "Acceleration Y", "Acceleration Z", "Activity" ],
 							"parameter_info" : "Select Control Change input movement parameter.",
@@ -3239,7 +8764,14 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 117.578951716423035, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 117.578951716423035, -0.263159155845642, 6.408450722694397, 168.74203234910965 ]
+					"presentation_rect" : [ 117.578951716423035, -0.263159155845642, 6.408450722694397, 168.74203234910965 ],
+					"saved_attribute_attributes" : 					{
+						"linecolor" : 						{
+							"expression" : ""
+						}
+
+					}
+
 				}
 
 			}
@@ -3264,6 +8796,34 @@
 					"presentation_rect" : [ 82.0, 10.248251765966415, 36.0, 11.503496468067169 ],
 					"remapsvgcolors" : 1,
 					"saved_attribute_attributes" : 					{
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_invisible" : 2,
@@ -3425,6 +8985,14 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 14.0, 29.0, 69.0, 127.0 ],
 					"saved_attribute_attributes" : 					{
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "1", "2", "3", "4", "5", "6" ],
 							"parameter_info" : "Select sensor to configure.",
@@ -3573,8 +9141,211 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-122", 1 ],
+					"order" : 0,
+					"source" : [ "obj-113", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 1 ],
+					"order" : 0,
+					"source" : [ "obj-113", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-124", 1 ],
+					"order" : 0,
+					"source" : [ "obj-113", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-125", 1 ],
+					"order" : 0,
+					"source" : [ "obj-113", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-137", 0 ],
+					"order" : 1,
+					"source" : [ "obj-113", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-139", 0 ],
+					"order" : 1,
+					"source" : [ "obj-113", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-141", 0 ],
+					"order" : 1,
+					"source" : [ "obj-113", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-143", 0 ],
+					"order" : 1,
+					"source" : [ "obj-113", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-1", 0 ],
 					"source" : [ "obj-116", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-113", 0 ],
+					"order" : 0,
+					"source" : [ "obj-119", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-121", 0 ],
+					"order" : 1,
+					"source" : [ "obj-119", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-132", 0 ],
+					"source" : [ "obj-121", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-122", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-123", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-124", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-125", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-122", 0 ],
+					"source" : [ "obj-128", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-123", 0 ],
+					"source" : [ "obj-128", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-124", 0 ],
+					"source" : [ "obj-128", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-125", 0 ],
+					"source" : [ "obj-128", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-131", 0 ],
+					"order" : 1,
+					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-135", 0 ],
+					"order" : 0,
+					"source" : [ "obj-130", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-119", 0 ],
+					"source" : [ "obj-131", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"source" : [ "obj-132", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-145", 0 ],
+					"order" : 1,
+					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-89", 0 ],
+					"order" : 0,
+					"source" : [ "obj-134", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-128", 0 ],
+					"source" : [ "obj-135", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-145", 0 ]
 				}
 
 			}
@@ -3702,6 +9473,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-1", 4 ],
+					"order" : 0,
+					"source" : [ "obj-36", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"order" : 1,
 					"source" : [ "obj-36", 0 ]
 				}
 
@@ -3907,7 +9687,24 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-113", 1 ],
+					"order" : 0,
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-134", 0 ],
+					"order" : 2,
+					"source" : [ "obj-81", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
+					"order" : 1,
 					"source" : [ "obj-81", 0 ]
 				}
 
@@ -4020,6 +9817,7 @@
 			"obj-88" : [ "somi1.save", "somi1.save", 0 ],
 			"obj-89" : [ "somi1.apply", "somi1.apply", 0 ],
 			"obj-91" : [ "somi1.found", "somi1.found", 0 ],
+			"obj-92" : [ "mio", "mio", 0 ],
 			"parameterbanks" : 			{
 
 			}
@@ -4029,28 +9827,28 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "battery_icon.svg",
-				"bootpath" : "~/Documents/Github/DL-SENSORS/SOMI-1 DL Editor4L/media",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/media",
+				"patcherrelativepath" : "../media",
+				"type" : "svg",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "invert_icon.svg",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/media",
 				"patcherrelativepath" : "../media",
 				"type" : "svg",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "somi-1_sysex_interface.js",
-				"bootpath" : "~/Documents/Github/DL-SENSORS/SOMI-1 DL Editor4L/code",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "invert_icon.svg",
-				"bootpath" : "~/Documents/Github/DL-SENSORS/SOMI-1 DL Editor4L/media",
-				"patcherrelativepath" : "../media",
-				"type" : "svg",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "somi-1_sysex_interface_test.js",
-				"bootpath" : "~/Documents/Github/DL-SENSORS/SOMI-1 DL Editor4L/code",
+				"bootpath" : "~/OneDrive/Documenti/DL-SENSORS/SOMI-1 DL Editor4L/code",
 				"patcherrelativepath" : "../code",
 				"type" : "TEXT",
 				"implicit" : 1

@@ -633,7 +633,7 @@ function sensorSelectCb(data){
 	update_UI();
 }
 function ccParamCb(data){
-
+/*
     if (data.value != gCcParam){
         outlet(0, createSysExCmdCcCfg(false, 
                                       gSensorId, 
@@ -649,7 +649,7 @@ function ccParamCb(data){
                                       gCcSlewRise, 
                                       gCcSlewFall));
     }
-
+*/
 	gCcParam = data.value;
 
 	//this.patcher.getnamed("somi1.cc_scale").message("set", snsr[gSensorId].ccparam[gCcParam].scale);
@@ -1202,6 +1202,12 @@ function update_UI() {
 	this.patcher.getnamed("somi1.pb_inverse").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::inverse"));
 	this.patcher.getnamed("somi1.pb_scale").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::scale"));
 	this.patcher.getnamed("somi1.pb_midi_channel").message("set", snsr.get("sensor["+gSensorId+"]::pitchbend["+gPbParam+"]::midich"));
+}
+
+function callPreset() {
+	gCcEnable = snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::enable");
+	gCcScale = snsr.get("sensor["+gSensorId+"]::ccparam["+gCcParam+"]::scale");
+	update_UI();
 }
 
 // Resets dictionary to default
